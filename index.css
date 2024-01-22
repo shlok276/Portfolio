@@ -480,4 +480,43 @@ body {
         font-size: 14px;
         padding: 10px 20px;
     }
+
+
+
+    .skill-container {
+        flex-direction: column;
+    }
+
+    .skill {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .skill-name a {
+        margin-top: 5px;
+        display: inline;
+        padding: 5px;
+        border: white solid;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+
+    .skill-subname {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .container {
+        padding-left: 5%;
+    }
+
+    .experience,
+    .certificate {
+        padding-left: 5%;
+    }
+
+    .contact-text {
+        margin-left: 5%;
+    }
 }
