@@ -452,7 +452,7 @@ body {
         margin-bottom: 20px;
     }
     .project-image {
-        margin-right: 10px; /* Add the desired margin */
+        margin-right: 15px; /* Add the desired margin */
     }
 
     .skill,
@@ -491,7 +491,7 @@ body {
     }
 
     .skill {
-        width: 100%;
+        width: 50%;
         margin-bottom: 10px;
     }
 
