@@ -50,11 +50,20 @@ body {
 .navbar a:hover {
     color: #0ef;
 }
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 101; /* Make sure it's above other elements */
+}
 
-/* ---------------------main home -------------------- */
-/* ... (your existing CSS) ... */
-
-
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+}
 
 .home {
     position: relative;
@@ -231,6 +240,7 @@ body {
     background: #051126;
     margin-bottom: 100px;
     border-radius: 8px;
+    padding: 10px 10px 10px 10px;
 }
 
 .container {
@@ -382,6 +392,12 @@ body {
         width: 100%;
         background: #051126;
         display: none;
+        z-index: 100;
+    }
+
+    .burger {
+        display: flex;
+        z-index: 101;
     }
 
     .navbar.active {
@@ -428,6 +444,9 @@ body {
     .about-text h2 {
         font-size: 40px;
     }
+    .about-text{
+        margin-left: 40px;
+    }
 
     .project-container,
     .container,
@@ -448,8 +467,10 @@ body {
     }
 
     .project-description {
-        width: 100%;
+        width: 98%;
+        /* margin-right: 15px; */
         margin-bottom: 20px;
+        padding: 10px 10px 10px 10px;
     }
     .project-image {
         margin-right: 15px; /* Add the desired margin */
@@ -520,6 +541,6 @@ body {
     }
 
     .contact-text {
-        margin-left: 3%;
+        margin-left: 1px;
     }
 }
