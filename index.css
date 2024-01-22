@@ -398,7 +398,7 @@ body {
     .burger {
         display: flex;
         z-index: 101;
-        margin-right:-130px;
+        margin-right:-120px;
     }
 
     .navbar.active {
