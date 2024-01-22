@@ -451,6 +451,9 @@ body {
         width: 100%;
         margin-bottom: 20px;
     }
+    .project-image {
+        margin-right: 10px; /* Add the desired margin */
+    }
 
     .skill,
     .skill-name a {
