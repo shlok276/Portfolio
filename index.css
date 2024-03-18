@@ -297,6 +297,9 @@ body {
 .experience-text p{
     padding-top: 7px;
 }
+.experience-text{
+width: 40%;
+}
 
 .certificate{
     margin-top: 40px;
