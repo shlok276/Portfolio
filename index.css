@@ -208,6 +208,12 @@ body {
     line-height: 1.4;
     margin-bottom: 4rem;
 }
+.project {
+    display: flex;
+    flex-direction: column; /* Ensures the image and description stack */
+    align-items: center;
+    width: 350px; /* Same width as image */
+}
 
 .project-title h1 span {
     color: #0ef;
@@ -226,6 +232,9 @@ body {
 
 .project-item {
     display: flex;
+    flex-wrap: wrap; /* Allows projects to move to the next line */
+    gap: 20px; /* Adds spacing between projects */
+    justify-content: flex-start; /* Aligns projects in the center */
 }
 
 .project-image img {
@@ -237,7 +246,6 @@ body {
 }
 .project-description{
     width: 350px;
-    height: 110px;
     background: #051126;
     margin-bottom: 100px;
     border-radius: 8px;
@@ -257,6 +265,9 @@ body {
 .skill-container {
     margin-top: 10px;
     display: flex;
+    flex-wrap: wrap; /* Allows projects to move to the next line */
+    gap: 20px; /* Adds spacing between projects */
+    justify-content: flex-start; /* Aligns projects in the center */
 }
 
 .skill {
@@ -268,6 +279,10 @@ body {
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+    display: flex;
+    flex-direction: column; /* Ensures the image and description stack */
+    align-items: left;
+    width: 350px; /* Same width as image */
 }
 
 .skill-name {
@@ -297,7 +312,6 @@ body {
 .experience-text p{
     padding-top: 7px;
 }
-
 
 .certificate{
     margin-top: 40px;
@@ -400,7 +414,7 @@ body {
     .burger {
         display: flex;
         z-index: 101;
-        margin-right:-50px;
+        margin-right:-140px;
     }
 
     .navbar.active {
@@ -448,7 +462,7 @@ body {
         font-size: 40px;
     }
     .about-text{
-        margin-left: 15px;
+        margin-left: 40px;
     }
 
     .project-container,
