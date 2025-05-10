@@ -208,48 +208,47 @@ body {
     line-height: 1.4;
     margin-bottom: 4rem;
 }
-.project {
-    display: flex;
-    flex-direction: column; /* Ensures the image and description stack */
-    align-items: center;
-    width: 350px; /* Same width as image */
+.project-container {
+    padding-left: 80px;
 }
 
 .project-title h1 span {
     color: #0ef;
-
-}
-
-.project-container {
-    /* background: red; */
-    padding-left: 80px;
 }
 
 .project-title {
-    /* background: green; */
     margin-bottom: 10px;
 }
 
 .project-item {
     display: flex;
-    flex-wrap: wrap; /* Allows projects to move to the next line */
-    gap: 20px; /* Adds spacing between projects */
-    justify-content: flex-start; /* Aligns projects in the center */
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    background-color: transparent;
 }
 
 .project-image img {
-    width: 350px; /* Set the width to 100% */
-    height: 240px; /* Set the height to 100% */
+    width: 350px;
+    height: 240px;
     object-fit: cover;
     border-radius: 8px;
-    margin-right: 10px;
+    margin-bottom: 10px;
 }
-.project-description{
+
+.project-description {
     width: 350px;
     background: #051126;
-    margin-bottom: 100px;
     border-radius: 8px;
-    padding: 10px 10px 10px 10px;
+    padding: 12px;
+    color: white;
 }
 
 .container {
@@ -259,47 +258,46 @@ body {
 
 .skill-topic h1 span {
     color: #0ef;
-
 }
 
 .skill-container {
     margin-top: 10px;
     display: flex;
-    flex-wrap: wrap; /* Allows projects to move to the next line */
-    gap: 20px; /* Adds spacing between projects */
-    justify-content: flex-start; /* Aligns projects in the center */
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
 }
 
 .skill {
     background: #051126;
-    margin-right: 10px;
-    width: 250px;
-    height: 100px;
-    border-radius: 5px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    width: 350px;
+    border-radius: 8px;
+    padding: 15px;
     display: flex;
-    flex-direction: column; /* Ensures the image and description stack */
-    align-items: left;
-    width: 350px; /* Same width as image */
+    flex-direction: column;
+    color: white;
+}
+
+.skill h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #0ef;
 }
 
 .skill-name {
-    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .skill-name a {
-    margin-top: 10px;
-    display: inline;
-    padding: 5px 5px 5px 5px;
-    border: white solid;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid white;
     border-radius: 8px;
+    font-size: 14px;
 }
 
-.skill-subname {
-    display: flex;
-}
 .experience{
     margin-top: 40px;
     padding-left: 80px;
