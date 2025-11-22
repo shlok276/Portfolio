@@ -70,14 +70,70 @@ body {
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background: url(aa.png) no-repeat;
+    /* OLD LINE REMOVED: background: url(aa.png) no-repeat; */
+    
+    /* NEW LINE: Creates the dark blue gradient background */
+    background: linear-gradient(90deg, #081b29 0%, #0c2e52 100%);
+    
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     padding: 70px 10% 0;
 }
+/* --- New styles for the Home Image --- */
 
+/* Container for the image */
+.home-img {
+    width: 45%; /* Takes up roughly half the space on the right */
+    text-align: center;
+    /* Optional animation to slide in from right */
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+
+/* The actual image styling */
+.home-img img {
+    /* Adjust width as needed, max-width ensures it doesn't get too big */
+    width: 100%;
+    max-width: 450px; 
+    height: auto;
+    /* Makes it a perfect circle */
+    border-radius: 50%;
+    /* Creates the glowing blue border effect seen in your screenshot */
+    border: 3px solid #0ef;
+    box-shadow: 0 0 25px #0ef;
+    /* Ensures the image doesn't look squashed if it's not perfectly square */
+    object-fit: cover;
+    aspect-ratio: 1 / 1; /* Enforces a square ratio for the circle */
+}
+
+/* --- Mobile Responsiveness for the new image --- */
+/* Add inside your existing media query @media only screen and (max-width: 768px) { ... } */
+
+@media only screen and (max-width: 768px) {
+    /* ... your existing mobile styles ... */
+    
+    .home {
+        padding: 100px 5% 50px; /* Added top padding so it doesn't hide behind navbar */
+        flex-direction: column; /* Stack text and image vertically on mobile */
+        height: auto; /* Allow height to adjust to content */
+        gap: 30px; /* Space between text and image */
+    }
+    
+    /* Adjust image size for mobile so it's not huge */
+    .home-img {
+        width: 80%;
+        margin-bottom: 30px;
+        /* On mobile, slide up instead of left */
+        animation: slideTop 1s ease forwards; 
+    }
+
+    .home-img img {
+        max-width: 300px;
+    }
+}
 
 
 .home-content h3 {
